@@ -83,7 +83,7 @@
 &kp TAB     &kp W         &kp E         &kp R        &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A       &kp S         &kp D         &kp F        &kp G  &kp AT            &kp AT_SIGN                &kp H        &kp J  &kp A      &lt 1 L  &lt 3 COLON
 &kp LCTRL   &kp X         &kp C         &kp V        &kp B  &kp Q             &kp J                      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LSHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp B  &lt 4 LSHIFT      &lt 4 LANG_ZENKAKUHANKAKU  &lt 2 ENTER                             &kp BACKSPACE
+&kp LSHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp B  &lt 5 LSHIFT      &lt 5 LANG_ZENKAKUHANKAKU  &lt 2 ENTER                             &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -107,6 +107,15 @@
             >;
         };
 
+        SCROLL {
+            bindings = <
+&kp RS(F11)  &trans                  &trans                  &trans                   &trans                      &trans  &trans     &kp RC(P)  &trans     &trans
+&kp LS(S)    &kp RS(RC(LEFT_ARROW))  &kp RS(RC(UP_ARROW))    &kp RC(RS(RIGHT_ARROW))  &trans  &trans      &trans  &trans  &kp LC(B)  &kp LC(N)  &kp RC(F)  &trans
+&trans       &trans                  &kp RS(RC(DOWN_ARROW))  &trans                   &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
+&trans       &trans                  &trans                  &trans                   &trans  &trans      &kp J   &kp K                                    &trans
+            >;
+        };
+
         ARROW {
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
@@ -124,15 +133,6 @@
 &bootloader  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
