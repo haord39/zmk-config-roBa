@@ -56,25 +56,25 @@
     };
 
     macros {
-        thank: new_macro {
+        thank: new_macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp T &kp H &kp A &kp N &kp K &kp SPACE &kp Y &kp O &kp U &kp SPACE &kp F &kp O &kp R &kp SPACE &kp Y &kp O &kp U &kp R &kp SPACE>;
-            label = "NEW_MACRO";
+            label = "NEW_MACRO1";
         };
 
-        Dear: new_macro {
+        Dear: new_macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp D &kp E &kp A &kp R &kp SPACE>;
-            label = "NEW_MACRO";
+            label = "NEW_MACRO2";
         };
 
-        Sorry: new_macro {
+        Sorry: new_macro3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp LS(S) &kp O &kp R &kp R &kp Y &kp SPACE &kp F &kp O &kp R &kp SPACE>;
-            label = "NEW_MACRO";
+            label = "NEW_MACRO3";
         };
     };
 
@@ -99,8 +99,6 @@
 &kp LCTRL   &kp X         &kp C         &kp V        &kp B  &kp Q             &kp J                      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LSHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp B  &lt 5 LSHIFT      &lt 5 LANG_ZENKAKUHANKAKU  &lt 2 ENTER                             &kp BACKSPACE
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         Mouse {
