@@ -55,29 +55,6 @@
         };
     };
 
-    macros {
-        thank: new_macro1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp T &kp H &kp A &kp N &kp K &kp SPACE &kp Y &kp O &kp U &kp SPACE &kp F &kp O &kp R &kp SPACE &kp Y &kp O &kp U &kp R &kp SPACE>;
-            label = "NEW_MACRO1";
-        };
-
-        Dear: new_macro2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp D &kp E &kp A &kp R &kp SPACE>;
-            label = "NEW_MACRO2";
-        };
-
-        Sorry: new_macro3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LS(S) &kp O &kp R &kp R &kp Y &kp SPACE &kp F &kp O &kp R &kp SPACE>;
-            label = "NEW_MACRO3";
-        };
-    };
-
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
@@ -131,7 +108,7 @@
         Special {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &thank  &Dear   &Sorry  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
