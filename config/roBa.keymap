@@ -56,11 +56,25 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        thank: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp H &kp A &kp N &kp K &kp SPACE &kp Y &kp O &kp U &kp SPACE &kp F &kp O &kp R &kp SPACE &kp Y &kp O &kp U &kp R &kp SPACE>;
+            label = "NEW_MACRO";
+        };
+
+        Dear: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp D &kp E &kp A &kp R &kp SPACE>;
+            label = "NEW_MACRO";
+        };
+
+        Sorry: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(S) &kp O &kp R &kp R &kp Y &kp SPACE &kp F &kp O &kp R &kp SPACE>;
+            label = "NEW_MACRO";
         };
     };
 
@@ -107,29 +121,31 @@
             >;
         };
 
-        SCROLL {
+        Scroll {
             bindings = <
 &kp RS(F11)  &trans                  &trans                  &trans                   &trans                      &trans  &trans     &kp RC(P)  &trans     &trans
 &kp LS(S)    &kp RS(RC(LEFT_ARROW))  &kp RS(RC(UP_ARROW))    &kp RC(RS(RIGHT_ARROW))  &trans  &trans      &trans  &trans  &kp LC(B)  &kp LC(N)  &kp RC(F)  &trans
 &trans       &trans                  &kp RS(RC(DOWN_ARROW))  &trans                   &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
 &trans       &trans                  &trans                  &trans                   &trans  &trans      &kp J   &kp K                                    &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
-        ARROW {
+        Special {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &thank  &Dear   &Sorry  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        MOUSE {
+        Reboot {
             bindings = <
-&trans       &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&sys_reset   &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &sys_reset
 &bootloader  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
