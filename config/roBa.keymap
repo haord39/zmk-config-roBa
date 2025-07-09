@@ -100,10 +100,10 @@
 
         Number {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                                &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp NUMBER_1     &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&kp RCTRL        &kp DOUBLE_QUOTES  &kp SQT       &kp EQUAL     &kp EQUAL     &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans           &trans             &trans        &trans        &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                                &kp AMPERSAND  &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LCTRL
+&kp NUMBER_1     &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8          &kp N9                 &kp N0
+&kp RCTRL        &kp DOUBLE_QUOTES  &kp SQT       &kp EQUAL     &kp EQUAL     &kp EQUAL                    &trans          &kp RC(H)      &kp PLUS      &kp MINUS             &kp ASTERISK           &kp SLASH
+&trans           &trans             &trans        &trans        &trans        &trans                       &kp DELETE      &trans                                                                    &kp PIPE
             >;
         };
 
