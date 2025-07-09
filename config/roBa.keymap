@@ -128,8 +128,6 @@
 &trans       &trans                  &kp RS(RC(DOWN_ARROW))  &trans                   &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
 &trans       &trans                  &trans                  &trans                   &trans  &trans      &kp J   &kp K                                    &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         Special {
@@ -139,8 +137,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         Reboot {
