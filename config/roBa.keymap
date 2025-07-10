@@ -69,9 +69,9 @@
 
         Number {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR     &kp PERCENT                            &kp LC(NUMBER_6)  &kp RS(NUMBER_7)   &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp EQUAL
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR     &kp PERCENT                            &kp LC(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
 &kp NUMBER_1     &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5   &trans      &trans      &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8      &kp N9            &kp N0
-&kp RCTRL        &kp RS(NUMBER_2)   &kp RS(NUMBER_7)  &kp RS(MINUS)  &kp RS(MINUS)  &trans      &trans      &kp RC(H)         &kp LS(SEMICOLON)  &kp MINUS         &kp COLON         &kp SLASH
+&kp RCTRL        &kp LS(NUMBER_2)   &kp LS(NUMBER_7)  &kp LS(MINUS)  &kp LS(MINUS)  &trans      &trans      &kp RC(H)         &kp LS(SEMICOLON)  &kp MINUS         &kp COLON         &kp SLASH
 &trans           &trans             &trans            &trans         &trans         &trans      &kp DELETE  &trans                                                                   &kp PIPE
             >;
         };
