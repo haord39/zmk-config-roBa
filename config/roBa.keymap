@@ -60,10 +60,10 @@
 
         Mouse {
             bindings = <
-&kp F1     &kp F2              &kp F3            &kp F4               &kp F5                                  &kp RC(LS(SEMICOLON))  &mkp MB4         &mkp MB5           &mkp MB5    &kp MINUS
-&kp F2     &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LS(LG(S))     &trans      &trans    &kp H                  &mkp MB1         &mkp MB3           &mkp MB2    &kp SEMICOLON
-&kp LCTRL  &kp LG(NUMBER_2)    &kp LG(NUMBER_3)  &kp LG(NUMBER_4)     &kp LG(NUMBER_5)  &trans      &trans    &kp ESCAPE             &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp INT_RO  &kp LS(QUESTION)
-&kp RCTRL  &kp LEFT_WIN        &kp LEFT_ALT      &trans               &trans            &trans      &mkp MB2  &kp LA(F4)                                                             &kp F12
+&kp F1     &kp F2              &kp F3            &kp F4               &kp F5                                  &kp RC(LS(SEMICOLON))  &mkp MB4         &mkp MB5           &mkp MB5         &kp MINUS
+&kp F2     &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LS(LG(S))     &trans      &trans    &kp H                  &mkp MB1         &mkp MB3           &mkp MB2         &kp SEMICOLON
+&kp LCTRL  &kp LG(NUMBER_2)    &kp LG(NUMBER_3)  &kp LG(NUMBER_4)     &kp LG(NUMBER_5)  &trans      &trans    &kp ESCAPE             &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp LS(INT_YEN)  &kp LS(QUESTION)
+&kp RCTRL  &kp LEFT_WIN        &kp LEFT_ALT      &trans               &trans            &trans      &mkp MB2  &kp LA(F4)                                                                  &kp F12
             >;
         };
 
