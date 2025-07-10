@@ -51,10 +51,10 @@
 
         default_layer {
             bindings = <
-&kp TAB     &kp W         &kp E         &kp R        &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D         &kp F        &kp G    &kp AT            &kp AT_SIGN      &kp H        &kp J  &kp K      &lt 1 L  &lt 5 SQT
-&kp LCTRL   &kp X         &kp C         &kp V        &kp B    &kp Q             &kp J            &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
-&kp LSHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &lt 5 B  &lt 3 LSHIFT      &lt 3 RS(SPACE)  &lt 2 ENTER                             &kp BACKSPACE
+&kp TAB     &kp W         &kp E         &kp R        &kp T                                            &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A       &kp S         &kp D         &kp F        &kp G    &kp LEFT_BRACKET      &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &lt 1 L  &lt 5 SQT
+&kp LCTRL   &kp X         &kp C         &kp V        &kp B    &kp Q                 &kp J             &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
+&kp LSHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &lt 5 B  &lt 3 LSHIFT          &lt 3 LS(SPACE)   &lt 2 ENTER                             &kp BACKSPACE
             >;
         };
 
@@ -69,10 +69,10 @@
 
         Number {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR     &kp PERCENT                            &kp LC(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
-&kp NUMBER_1     &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5   &trans      &trans      &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8      &kp N9            &kp N0
-&kp RCTRL        &kp LS(NUMBER_2)   &kp LS(NUMBER_7)  &kp LS(MINUS)  &kp LS(MINUS)  &trans      &trans      &kp RC(H)         &kp LS(SEMICOLON)  &kp MINUS         &kp COLON         &kp SLASH
-&trans           &trans             &trans            &trans         &trans         &trans      &kp DELETE  &trans                                                                   &kp PIPE
+&kp EXCLAMATION  &kp LS(NUMBER_2)  &kp HASH          &kp DOLLAR     &kp PERCENT                            &kp CARET     &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)   &kp EQUAL
+&kp NUMBER_1     &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5   &trans      &trans      &kp NUMBER_6  &kp NUMBER_7       &kp NUMBER_8      &kp N9             &kp N0
+&kp RCTRL        &kp LS(NUMBER_2)  &kp LS(NUMBER_7)  &kp LS(MINUS)  &kp LS(MINUS)  &trans      &trans      &kp RC(H)     &kp LS(SEMICOLON)  &kp MINUS         &kp DOUBLE_QUOTES  &kp SLASH
+&trans           &trans            &trans            &trans         &trans         &trans      &kp DELETE  &trans                                                                &kp PIPE
             >;
         };
 
