@@ -21,29 +21,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         new_macro1: new_macro1 {
@@ -82,19 +60,19 @@
 
         Mouse {
             bindings = <
-&kp F1     &kp F2              &kp F3            &kp F4               &kp F5                                  &kp RC(RS(SEMICOLON))  &mkp MB4         &mkp MB5           &mkp MB5            &kp MINUS
+&kp F1     &kp F2              &kp F3            &kp F4               &kp F5                                  &kp RC(LS(SEMICOLON))  &mkp MB4         &mkp MB5           &mkp MB5            &kp MINUS
 &kp F2     &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LS(LG(S))     &trans      &trans    &kp H                  &mkp MB1         &mkp MB3           &mkp MB2            &kp SEMICOLON
-&kp LCTRL  &kp LG(NUMBER_2)    &kp LG(NUMBER_3)  &kp LG(NUMBER_4)     &kp LG(NUMBER_5)  &trans      &trans    &kp LC(ESCAPE)         &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp RS(UNDERSCORE)  &kp RS(QUESTION)
+&kp LCTRL  &kp LG(NUMBER_2)    &kp LG(NUMBER_3)  &kp LG(NUMBER_4)     &kp LG(NUMBER_5)  &trans      &trans    &kp ESCAPE             &kp RC(PAGE_UP)  &kp RC(PAGE_DOWN)  &kp LS(UNDERSCORE)  &kp LS(QUESTION)
 &kp RCTRL  &kp LEFT_WIN        &kp LEFT_ALT      &trans               &trans            &trans      &mkp MB2  &kp LA(F4)                                                                     &kp F12
             >;
         };
 
         Number {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR     &kp PERCENT                            &kp LC(NUMBER_6)  &kp RS(NUMBER_7)  &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp EQUAL
-&kp NUMBER_1     &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5   &trans      &trans      &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8      &kp N9            &kp N0
-&kp RCTRL        &kp RS(NUMBER_2)   &kp RS(NUMBER_7)  &kp RS(MINUS)  &kp RS(MINUS)  &trans      &trans      &kp RC(H)         &kp PLUS          &kp MINUS         &kp ASTERISK      &kp SLASH
-&trans           &trans             &trans            &trans         &trans         &trans      &kp DELETE  &trans                                                                  &kp PIPE
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR     &kp PERCENT                            &kp LC(NUMBER_6)  &kp RS(NUMBER_7)   &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp EQUAL
+&kp NUMBER_1     &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5   &trans      &trans      &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8      &kp N9            &kp N0
+&kp RCTRL        &kp RS(NUMBER_2)   &kp RS(NUMBER_7)  &kp RS(MINUS)  &kp RS(MINUS)  &trans      &trans      &kp RC(H)         &kp LS(SEMICOLON)  &kp MINUS         &kp COLON         &kp SLASH
+&trans           &trans             &trans            &trans         &trans         &trans      &kp DELETE  &trans                                                                   &kp PIPE
             >;
         };
 
@@ -118,7 +96,7 @@
 
         Scroll {
             bindings = <
-&kp RS(F11)  &trans                  &trans                  &trans                   &trans                      &trans  &trans     &kp RC(P)  &trans     &trans
+&kp LS(F11)  &trans                  &trans                  &trans                   &trans                      &trans  &trans     &kp RC(P)  &trans     &trans
 &kp LS(S)    &kp RS(RC(LEFT_ARROW))  &kp RS(RC(UP_ARROW))    &kp RC(RS(RIGHT_ARROW))  &trans  &trans      &trans  &trans  &kp LC(B)  &kp LC(N)  &kp RC(F)  &trans
 &kp LCTRL    &trans                  &kp RS(RC(DOWN_ARROW))  &trans                   &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
 &trans       &trans                  &trans                  &trans                   &trans  &trans      &kp J   &kp K                                    &trans
