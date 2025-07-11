@@ -96,10 +96,10 @@
 
         Scroll {
             bindings = <
-&kp LS(F11)    &trans                  &kp UP_ARROW            &trans                   &trans                      &trans  &trans     &kp RC(P)  &trans     &trans
-&kp LS(LC(S))  &kp RS(RC(LEFT_ARROW))  &none                   &kp RC(RS(RIGHT_ARROW))  &trans  &trans      &trans  &trans  &kp LC(B)  &none      &kp RC(F)  &trans
-&kp LCTRL      &trans                  &kp RS(RC(DOWN_ARROW))  &trans                   &trans  &trans      &trans  &trans  &trans     &kp LC(N)  &trans     &trans
-&trans         &trans                  &trans                  &trans                   &trans  &trans      &kp J   &kp K                                    &trans
+&kp LS(F11)    &trans                  &kp UP_ARROW            &trans                   &trans                                          &trans  &trans     &kp RC(P)  &trans     &trans
+&kp LS(LC(S))  &kp RS(RC(LEFT_ARROW))  &none                   &kp RC(RS(RIGHT_ARROW))  &trans            &trans                &trans  &trans  &kp LC(B)  &none      &kp RC(F)  &trans
+&kp LCTRL      &trans                  &kp RS(RC(DOWN_ARROW))  &trans                   &trans            &trans                &trans  &trans  &trans     &kp LC(N)  &trans     &trans
+&trans         &trans                  &trans                  &kp LG(NUMBER_1)         &kp LG(NUMBER_2)  &kp LG(NUMBER_3)      &kp J   &kp K                                    &trans
             >;
         };
 
