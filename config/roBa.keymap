@@ -70,7 +70,7 @@
         Number {
             bindings = <
 &kp EXCLAMATION  &kp LS(NUMBER_2)  &kp HASH          &kp DOLLAR     &kp PERCENT                            &kp CARET     &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)   &kp EQUAL
-&kp NUMBER_1     &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5   &trans      &trans      &kp NUMBER_6  &kp NUMBER_7       &kp NUMBER_8      &kp N9             &kp N0
+&kp NUMBER_1     &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5   &none       &trans      &kp NUMBER_6  &kp NUMBER_7       &kp NUMBER_8      &kp N9             &kp N0
 &kp RCTRL        &kp LS(NUMBER_2)  &kp LS(NUMBER_7)  &kp LS(MINUS)  &kp LS(MINUS)  &trans      &trans      &kp RC(H)     &kp LS(SEMICOLON)  &kp MINUS         &kp DOUBLE_QUOTES  &kp SLASH
 &trans           &trans            &trans            &trans         &trans         &trans      &kp DELETE  &trans                                                                &kp PIPE
             >;
