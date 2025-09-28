@@ -105,7 +105,7 @@
 
         Special {
             bindings = <
-&trans  &trans       &trans       &trans       &trans                      &trans  &trans         &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans                      &trans  &trans         &trans  &trans  &none
 &trans  &new_macro1  &new_macro2  &new_macro3  &trans  &trans      &trans  &trans  &kp LS(LA(B))  &trans  &trans  &trans
 &trans  &trans       &trans       &trans       &trans  &trans      &trans  &trans  &trans         &trans  &trans  &trans
 &trans  &trans       &trans       &trans       &trans  &trans      &trans  &trans                                 &trans
