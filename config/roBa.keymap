@@ -91,10 +91,10 @@
 
         Mouse {
             bindings = <
-&kp F1     &kp F2              &kp F3            &kp F4               &kp F5                               &kp LS(LC(F1))  &kp LC(MINUS)    &mkp MB4           &mkp MB5      &kp MINUS
-&kp F2     &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LS(LG(S))  &trans      &trans    &kp H           &mkp MB1         &mkp MB3           &mkp MB2      &kp SEMICOLON
-&kp LCTRL  &kp LG(NUMBER_2)    &kp LG(NUMBER_3)  &kp LG(NUMBER_4)     &kp LG(N5)     &trans      &trans    &kp ESCAPE      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LS(INT3)  &kp LS(QUESTION)
-&kp LCTRL  &kp LEFT_GUI        &kp LEFT_ALT      &trans               &trans         &trans      &mkp MB2  &kp LA(F4)                                                        &kp F12
+&kp F1     &kp F2              &kp F3            &kp F4               &kp F5                               &kp LS(LC(SEMICOLON))  &kp LC(MINUS)    &mkp MB4           &mkp MB5      &kp MINUS
+&kp F2     &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LS(LG(S))  &trans      &trans    &kp H                  &mkp MB1         &mkp MB3           &mkp MB2      &kp SEMICOLON
+&kp LCTRL  &kp LG(NUMBER_2)    &kp LG(NUMBER_3)  &kp LG(NUMBER_4)     &kp LG(N5)     &trans      &trans    &kp ESCAPE             &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LS(INT3)  &kp LS(QUESTION)
+&kp LCTRL  &kp LEFT_GUI        &kp LEFT_ALT      &trans               &trans         &trans      &mkp MB2  &kp LA(F4)                                                               &kp F12
             >;
         };
 
@@ -132,7 +132,7 @@
 &kp LS(F11)    &trans                  &kp LS(UP_ARROW)        &trans                   &trans                                &trans  &trans     &kp LC(P)  &trans     &kp LS(LA(B))
 &kp LS(LC(S))  &kp LS(LC(LEFT_ARROW))  &none                   &kp LC(LS(RIGHT_ARROW))  &trans  &trans                &trans  &trans  &kp LC(B)  &kp LCTRL  &kp LC(F)  &trans
 &kp LCTRL      &trans                  &kp LS(LC(DOWN_ARROW))  &trans                   &trans  &trans                &trans  &trans  &trans     &kp LC(N)  &trans     &trans
-&trans         &trans                  &trans                  &kp LG(NUMBER_1)         &kp B   &kp LG(NUMBER_3)      &kp J   &kp K                                    &trans
+&kp LSHIFT     &trans                  &trans                  &kp LG(NUMBER_1)         &kp B   &kp LG(NUMBER_3)      &kp Q   &kp J                                    &trans
             >;
         };
 
